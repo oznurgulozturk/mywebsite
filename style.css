@@ -1,0 +1,81 @@
+/* Bütün sayfadaki gereksiz boşlukları sıfırlıyoruz */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sayfanın genel arka planı, yazı rengi ve yazı tipi */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern ve temiz bir yazı tipi */
+    background-color: #f8f9fa; /* Gözü yormayan, çok hafif gri-beyaz bir arka plan */
+    color: #333333; /* Koyu gri yazı rengi (tam siyah yerine daha profesyonel durur) */
+    line-height: 1.6; /* Satır aralarındaki boşluk (okumayı kolaylaştırır) */
+    padding: 40px 20px; /* Sayfanın sağından solundan ve üstünden şık bir boşluk */
+    max-width: 800px; /* Sitenin devasa genişlemesini önler, ortada toplar */
+    margin: 0 auto; /* Sitenin bilgisayar ekranında tam ortalanmasını sağlar */
+}
+.profile-img {
+    width: 130px; /* Fotoğrafın genişliği */
+    height: 130px; /* Fotoğrafın yüksekliği */
+    border-radius: 50%; /* Tam bir daire yapar */
+    object-fit: cover; /* Fotoğrafın basık görünmesini engeller */
+    border: 3px solid #6c5ce7; /* Etrafına mor/mor mavi tonlarında şık bir çerçeve */
+    margin-bottom: 20px; /* Altındaki yazı ile arasına boşluk koyar */
+    display: block; /* Ortalamak için gerekli altyapı */
+}
+section {
+    background-color: #ffffff; /* Kutuların içi bembeyaz olacak */
+    border-radius: 12px; /* Köşeleri hafifçe yumuşatıyoruz */
+    padding: 25px; /* Kutunun içindeki yazıların kenarlara yapışmasını önler */
+    margin-bottom: 25px; /* İki kutu arasında dikey boşluk bırakır */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Kutuların altına hafif, gerçekçi bir gölge */
+}
+/* Ana Başlık (Welcome yazısı) */
+h1 {
+    color: #2d3436;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center; /* Başlığı tam ortala */
+}
+
+/* Bölüm Başlıkları (About Me, My Education vs.) */
+h2 {
+    color: #6c5ce7; /* Başlıklarımıza tatlı bir mor renk veriyoruz */
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #efeeee; /* Başlığın altına ince şık bir çizgi */
+    padding-bottom: 5px;
+}
+
+/* Listelerin Düzeni */
+ul {
+    list-style-type: none; /* Sıkıcı siyah noktaları kaldırıyoruz */
+}
+
+li {
+    margin-bottom: 10px; /* Liste elemanlarının arasına boşluk */
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Listelerin başına tatlı birer işaret koyalım */
+li::before {
+    content: "•";
+    color: #6c5ce7; /* Noktalarımız da mor olsun */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+a {
+    color: #6c5ce7;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Renk değişimini yumuşak yapar */
+}
+
+/* Mouse ile linkin üzerine gelindiğinde (Hover durumu) */
+a:hover {
+    color: #a29bfe; /* Rengi biraz daha açılır */
+    text-decoration: underline; /* Sadece üzerine gelince altı çizilsin */
+}
