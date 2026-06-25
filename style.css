@@ -16,11 +16,11 @@ body {
     margin: 0 auto; /* Sitenin bilgisayar ekranında tam ortalanmasını sağlar */
 }
 .profile-img {
-    width: 130px; /* Fotoğrafın genişliği */
-    height: 130px; /* Fotoğrafın yüksekliği */
-    border-radius: 50%; /* Tam bir daire yapar */
+    width: 500px; /* Fotoğrafın genişliği */
+    height: 550px; /* Fotoğrafın yüksekliği */
+    border-radius: 8px; /* Tam bir daire yapar */
     object-fit: cover; /* Fotoğrafın basık görünmesini engeller */
-    border: 3px solid #6c5ce7; /* Etrafına mor/mor mavi tonlarında şık bir çerçeve */
+    border: 3px solid #f46aea; /* Etrafına şık bir çerçeve */
     margin-bottom: 20px; /* Altındaki yazı ile arasına boşluk koyar */
     display: block; /* Ortalamak için gerekli altyapı */
 }
@@ -41,7 +41,7 @@ h1 {
 
 /* Bölüm Başlıkları (About Me, My Education vs.) */
 h2 {
-    color: #6c5ce7; /* Başlıklarımıza tatlı bir mor renk veriyoruz */
+    color: #ed82ed; /* Başlıklarımıza tatlı bir pembe renk veriyoruz */
     font-size: 1.4rem;
     margin-bottom: 15px;
     border-bottom: 2px solid #efeeee; /* Başlığın altına ince şık bir çizgi */
@@ -62,13 +62,13 @@ li {
 /* Listelerin başına tatlı birer işaret koyalım */
 li::before {
     content: "•";
-    color: #6c5ce7; /* Noktalarımız da mor olsun */
+    color: #f053f3; /* Noktalarımız da mor olsun */
     font-weight: bold;
     position: absolute;
     left: 0;
 }
 a {
-    color: #6c5ce7;
+    color: #f053f3;
     text-decoration: none; /* Alt çizgiyi kaldırır */
     font-weight: 500;
     transition: color 0.3s ease; /* Renk değişimini yumuşak yapar */
@@ -76,6 +76,6 @@ a {
 
 /* Mouse ile linkin üzerine gelindiğinde (Hover durumu) */
 a:hover {
-    color: #a29bfe; /* Rengi biraz daha açılır */
+    color: #f053f3; /* Rengi biraz daha açılır */
     text-decoration: underline; /* Sadece üzerine gelince altı çizilsin */
 }
