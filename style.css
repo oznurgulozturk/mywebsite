@@ -16,8 +16,8 @@ body {
     margin: 0 auto; /* Sitenin bilgisayar ekranında tam ortalanmasını sağlar */
 }
 .profile-img {
-    width: 500px; /* Fotoğrafın genişliği */
-    height: 550px; /* Fotoğrafın yüksekliği */
+    width: 250px; /* Fotoğrafın genişliği */
+    height: 300px; /* Fotoğrafın yüksekliği */
     border-radius: 8px; /* Tam bir daire yapar */
     object-fit: cover; /* Fotoğrafın basık görünmesini engeller */
     border: 3px solid #f46aea; /* Etrafına şık bir çerçeve */
